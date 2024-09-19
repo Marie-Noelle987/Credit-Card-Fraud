@@ -17,12 +17,15 @@ The dataset contains the following key features:
 •	Class: Label, where 1 represents fraud and 0 represents non-fraud.
 
 Modeling and Performance
+
 In this project, various machine learning models were employed to classify transactions as fraudulent or non-fraudulent. The models tested include:
 •	Logistic Regression
 •	Random Forest
 •	XGBoost (Extreme Gradient Boosting)
 •	AdaBoost
 •	Support Vector Machine (SVM)
+
+
 Each model was trained and evaluated using a train/test split, with subsequent performance improvements using hyperparameter tuning (via GridSearchCV) and cross-validation to enhance accuracy.
 Results:
 •	Best Model: XGBoost
@@ -34,6 +37,7 @@ o	Confusion Matrix:
 	False Negatives: 19
 	False Positives: 24
 These metrics indicate that the XGBoost model offers a good balance between precision and recall, effectively identifying fraudulent transactions while minimizing false positives.
+
 Conclusions
 The analysis reveals that certain features significantly impact the model’s ability to identify fraud. Specifically:
 •	Transactions with unusually high amounts are positively correlated with fraud.
